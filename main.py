@@ -56,14 +56,11 @@ def checki(x):
     return bp 
 train=pd.read_csv("train.csv") 
 mp = pd.read_csv(path + "train.csv")["duration"] 
-time  = mp.apply(checki) 
- 
+time  = mp.apply(checki)  
 def func_sec(time_string): 
     h, m, s = time_string.split(':') 
-    return int(h) * 3600 + int(m) * 60 + int(s) 
- 
+    return int(h) * 3600 + int(m) * 60 + int(s)  
 time1=time.apply(func_sec) 
- 
 data_train["duration"]=time1 
 data_train.head()
 import seaborn as sns
