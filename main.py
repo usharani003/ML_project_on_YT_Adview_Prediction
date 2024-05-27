@@ -77,8 +77,13 @@ plt.show()
 data_train = data_train[data_train["adview"] < 2000000]
 f, ax = plt.subplots(figsize=(10, 8))
 corr = data_train.corr()
-sns.heatmap(corr, mask=np.zeros_like(corr, dtype=bool), cmap=sns.diverging_palette(250, 15, s=75, l=40, n=9, as_cmap=True), 
-            square=True, ax=ax, annot=True)
+light_colors = sns.light_palette("seagreen", as_cmap=True)
+sns.heatmap(corr, 
+            mask=np.zeros_like(corr, dtype=bool), 
+            cmap=light_colors, 
+            square=True, 
+            ax=ax, 
+            annot=True)
 plt.title('Correlation Heatmap')
 plt.show()
 Y_train  = pd.DataFrame(data = data_train.iloc[:, 1].values, columns = ['target']) 
