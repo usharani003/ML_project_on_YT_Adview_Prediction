@@ -105,7 +105,25 @@ The best-performing model was selected based on prediction accuracy and generali
 The final model was used to predict adview counts on unseen data.
 
 ---
+## 📷 Project Visualizations
 
+### 1. Category Distribution Histogram
+
+This histogram shows the distribution of videos across different YouTube categories in the dataset.
+
+![Category Distribution](Images/Histogram.png)
+
+### 2. Adview Distribution
+
+This plot visualizes the variation of adview counts across the dataset records.
+
+![Adview Distribution](Images/Adview_Plot.png)
+
+### 3. Correlation Heatmap
+
+The correlation heatmap shows relationships between different features in the dataset. Darker colors indicate stronger correlations, while lighter colors indicate weaker relationships.
+
+![Correlation Heatmap](Images/Correlation_HeatMap.png)
 ## 📈 Key Learning Outcomes
 
 During this internship project, I learned:
@@ -125,10 +143,20 @@ During this internship project, I learned:
 ```text
 ML_project_on_YT_Adview_Prediction/
 │
-├── Dataset/
-├── Notebook/
-├── Model Files/
-├── Results/
+├── Certificates/
+│   ├── ML Internship - Training Certificate.pdf
+│   └── ML Internship Certificate.pdf
+│
+├── Screenshots/
+│   ├── Histogram.png
+│   ├── Adview_Plot.png
+│   └── Correlation_HeatMap.png
+│
+├── ann_youtubeadview.h5
+├── decisiontree_youtubeadview.pkl
+├── main.py
+├── train.csv
+├── test.csv
 └── README.md
 ```
 
@@ -145,6 +173,11 @@ ML_project_on_YT_Adview_Prediction/
 This project was completed as part of my Machine Learning internship program, where I applied machine learning concepts to solve a real-world regression problem.
 
 ---
+## Certificates
+
+This project was completed during my Machine Learning Internship at Internship Studio (April 2024 – June 2024).
+
+Relevant certificates are available in the `Certificate` folder.
 
 ## 👩‍💻 Author
 
